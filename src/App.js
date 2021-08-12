@@ -1,7 +1,6 @@
 import './App.css';
 import User from "./components/user/user";
-import Address from "./components/address/address";
-import Geo from "./components/geo/geo";
+
 function App() {
 
     let usersList = [
@@ -239,15 +238,19 @@ function App() {
 
   return (
       <div>
-        <User {...usersList[0]}/>
-        <Address{...usersList[0]}/>
-        <Geo{...usersList[0]}/>
-    </div>
-  );
-}
-
+          <User {...usersList[0]}/>
+          <User {...usersList[1]}/>
+          <User {...usersList[2]}/>
+          <User {...usersList[3]}/>
+          <User {...usersList[4]}/>
+          <User {...usersList[5]}/>
+          <User {...usersList[6]}/>
+          <User {...usersList[7]}/>
+          <User {...usersList[8]}/>
+          <User {...usersList[9]}/>
+      </div>
+  );}
 export default App;
-
 
 // Взяти масив usersList.
 //     Створити компонент,котрий характеризує юзера.
